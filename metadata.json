@@ -1,0 +1,7 @@
+{
+  "name": "Copy of The Solar Design - Renewable Energy Solutions",
+  "description": "A comprehensive, responsive solar design and engineering platform providing professional PV permit sets, CAD design, and energy consulting services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

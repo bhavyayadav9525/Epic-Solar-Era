@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Solar Design | Professional Solar Engineering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #10b981;
+      --dark: #0f172a;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Menu Staggered Links */
+    .menu-link {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .menu-open .menu-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Floating Menu Button Glow */
+    .menu-btn-glow {
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .menu-btn-glow:hover {
+      box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+      transform: scale(1.05);
+    }
+
+    /* Premium Overlay Blur */
+    .menu-overlay {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(15px);
+      transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      clip-path: circle(0% at 95% 5%);
+    }
+
+    .menu-overlay.open {
+      clip-path: circle(150% at 95% 5%);
+    }
+
+    /* Custom Cursor Ripple (Optional Visual) */
+    .btn-ripple {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Hide scrollbar when menu is open */
+    .no-scroll {
+      overflow: hidden;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div id="root"></div>
+</body>
+</html>
